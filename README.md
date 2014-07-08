@@ -31,6 +31,7 @@ Another lib, `chainsaw` (written by me), is included in the repo. True to its na
 
 Now we're ready to do some symlinking. Using your terminal... (replace /script/ with this build script's directory)
 NOTE: You can rename these however you like, or just adjust `config/global.lua` to match your setup. This follows the defaults. 
+
 1. `cd /script/`
 2. `ln -s /path/to/NDK /script/ndk`
 3. `ln -s /path/to/SDK /script/sdk`
@@ -58,6 +59,7 @@ lua build.lua test
 ```
 
 The script goes through a total of 7 (at the time if this writing) phases with a prompt between each so you can see what's going on.
+
 1. Verification (make sure settings are correct)
 2. Create project structure (copy source and externals to build/[project]), also does some refactoring in the process.
 3. Refactoring (nuke placeholders, this is where Chainsaw shines)
